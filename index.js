@@ -1,13 +1,15 @@
 var express = require('express')
 var app = express()
+var path = require("path");
 
 // yt stuff
 var fs = require('fs');
 var youtubedl = require('youtube-dl');
 
+app.use(express.static(path.join(__dirname, "app")));
 // formatting is screwed up
 app.get('/', function (req, res) {
-  res.send('Hello World!')
+  res.sendFile("./index.html");
 var video = youtubedl('http://www.youtube.com/watch?v=90AiXO1pAiA',
   // Optional arguments passed to youtube-dl.
   ['--format=18'],
