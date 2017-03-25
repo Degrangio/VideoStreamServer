@@ -1,5 +1,5 @@
 console.log("Enter StreamVideo.js");
-document.addeventlistener("streamVideo", function()
+document.getElementById("streamVideo").addeventlistener("click", function()
 {
 console.log("function for StreamVideo hit");
 var video = youtubedl('http://www.youtube.com/watch?v=90AiXO1pAiA',
