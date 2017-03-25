@@ -9,8 +9,8 @@ var youtubedl = require('youtube-dl');
 app.use(express.static(path.join(__dirname, "app")));
 // formatting is screwed up
 app.get('/', function (req, res) {
-  res.sendFile("./index.html");
-  res.sendFile("./StreamVideo.js");
+  //res.sendFile("./index.html");
+  //res.sendFile("./StreamVideo.js");
 
 var video = youtubedl('http://www.youtube.com/watch?v=90AiXO1pAiA',
   // Optional arguments passed to youtube-dl.
