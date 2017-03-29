@@ -10,4 +10,3 @@ button.addEventListener("click", () => {
 		newDiv.appendChild(document.createTextNode(text));
 		document.body.insertBefore(newDiv, button.nextSibling);
 });
-
